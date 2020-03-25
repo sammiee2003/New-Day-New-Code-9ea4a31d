@@ -5,7 +5,7 @@ $geld = intval($bedrag);
 
 foreach ($geldeEnheden as $value) {
     $restgeld = floor($geld / $value);
-    if ($restgeld >= 1){
+    if ($restgeld >= 1) {
         $geld = $geld - ($value * $restgeld);
         echo $restgeld . "x" . $value . "euro" . PHP_EOL;
     }
